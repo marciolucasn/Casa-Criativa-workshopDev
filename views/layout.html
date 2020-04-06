@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<!--
+            Class - uma classe com vários elementos 
+                - Referencio o class com '.className'
+            ID - Identifica apenas um elemento
+                - Referencio o ID com '#idName'
+
+        -->
+
+<html lang="pt-br">
+
+<head>
+    {% include "head.html" %}
+    <title>{{ titlePage }}</title>
+
+</head>
+
+<body id="{{ bodyId }}">
+
+    <div id="container">
+
+        {% block content %}
+        {% endblock %}
+
+    </div>
+
+    {% include "modal.html" %}
+
+    <script src="/scripts.js"></script>
+</body>
+
+</html>
+
